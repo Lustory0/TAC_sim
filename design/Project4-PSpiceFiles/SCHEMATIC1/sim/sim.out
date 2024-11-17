@@ -1,0 +1,572 @@
+
+**** 11/15/24 19:52:48 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ c:\cds_spb_home\cdssetup\project4\project4-pspicefiles\schematic1\sim.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.55u 2.44u 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.OPTIONS ABSTOL= 1.0n
+.OPTIONS ITL2= 200
+.OPTIONS ITL4= 1000
+.OPTIONS RELTOL= 0.01
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT4
+V_V1         VCC 0 12Vdc
+R_R1         N00167 VCC  2k TC=0,0 
+R_R2         0 N00167  10k TC=0,0 
+C_C1         0 N00167  1u  TC=0,0 
+C_C2         0 N00415  1n  TC=0,0 
+V_V2         N08043 0 11Vdc
+R_R3         N01127 VCC  1500k TC=0,0 
+R_R4         N09487 VCC  1k TC=0,0 
+M_M1         N09487 0 N01127 N01127 IRF123
+X_U3         N01815 N01771 VCC 0 N01750 OPA2156
+V_V3         N01815 0 4.5Vdc
+X_Q7         N00415 N26891 N01754 BFG135/PLP 
+X_Q8         N03553 N27016 N01754 BFG135/PLP 
+X_Q10         N01754 N01750 N01771 BFG135/PLP 
+R_R6         N03553 VCC  150 TC=0,0 
+X_U5         N08043 N01127 VCC 0 N01016 OPA2156
+X_Q11         N00415 N01016 N01127 BFT93/INF
+X_D4         N00415 N00167 BAT54/PLP
+D_D6         0 N00167 BZX84C9V1/PLP 
+V_V4         N26891 0  
++PULSE 5.02V 5.499V 2.45u 200p 200p 0.05u 4u
+V_V5         N27016 0  
++PULSE 5.02V 5.499V 0 400p 400p 2.45u 2.5u
+R_R7         0 N01771  90 TC=0,0 
+X_U6         N00415 N32736 VCC 0 N32736 OPA659
+
+**** RESUMING sim.cir ****
+.END
+
+**** 11/15/24 19:52:48 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ c:\cds_spb_home\cdssetup\project4\project4-pspicefiles\schematic1\sim.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.X_U1.DVN   X_U5.X_U1.DVN   
+          IS  100.000000E-18  100.000000E-18 
+          KF    1.000000E-12    1.000000E-12 
+
+
+**** 11/15/24 19:52:48 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ c:\cds_spb_home\cdssetup\project4\project4-pspicefiles\schematic1\sim.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U6.NPN        X_U6.PNP        
+               NPN             PNP             
+       LEVEL    1               1            
+          IS  100.000000E-18  100.000000E-18 
+          BF  100             100            
+          NF    1               1            
+         VAF    1.000000E+09    1.000000E+09 
+         IKF    1.000000E+09    1.000000E+09 
+          BR    1               1            
+          NR    1               1            
+         VAR    1.000000E+09    1.000000E+09 
+         IKR    1.000000E+09    1.000000E+09 
+         ISS    0               0            
+          RB  240             240            
+         RBM  190             190            
+         IRB    1.000000E+09    1.000000E+09 
+          RE    0               0            
+          RC  200             200            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+         VTF    1.000000E+09    1.000000E+09 
+          KF    5.000000E-15    5.000000E-15 
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 11/15/24 19:52:48 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ c:\cds_spb_home\cdssetup\project4\project4-pspicefiles\schematic1\sim.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U6.NFET       
+               NJF             
+         VTO   -2            
+        BETA  100.000000E-06 
+          RD   25            
+          RS   25            
+          KF   40.000000E-18 
+
+
+**** 11/15/24 19:52:48 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ c:\cds_spb_home\cdssetup\project4\project4-pspicefiles\schematic1\sim.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+               X_U5.R_NOISELESS 
+  T_Measured   27            
+   T_Current -273.15         
+           R    1            
+
+
+**** 11/15/24 19:52:48 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ c:\cds_spb_home\cdssetup\project4\project4-pspicefiles\schematic1\sim.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.X_S1._S1   X_U3.X_S2._S2   
+         RON     .01             .01         
+        ROFF    1.000000E+12    1.000000E+12 
+         VON     .01             .01         
+        VOFF    0               0            
+
+
+               X_U3.X_U21.ESD_SW 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+               X_U3.X_U25.OL_SW 
+         RON    1.000000E-03 
+        ROFF    1.000000E+12 
+         VON     .9          
+        VOFF     .8          
+
+
+               X_U3.X_U5.ESD_SW                X_U5.X_S1._S1   X_U5.X_S2._S2   
+         RON   50                                .01             .01         
+        ROFF    1.000000E+12                    1.000000E+12    1.000000E+12 
+         VON     .5                              .01             .01         
+        VOFF     .45                            0               0            
+
+
+               X_U5.X_U21.ESD_SW 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+               X_U5.X_U25.OL_SW 
+         RON    1.000000E-03 
+        ROFF    1.000000E+12 
+         VON     .9          
+        VOFF     .8          
+
+
+               X_U5.X_U5.ESD_SW 
+         RON   50            
+        ROFF    1.000000E+12 
+         VON     .5          
+        VOFF     .45         
+
+
+WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increase total simulation job time.
+
+Starting pseudo-transient algorithm.
+
+INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set following options to relax stabilization criteria for capacitor currents and inductor voltages: PTRANABSTOL=1e-5, PTRANVNTOL=1e-4
+
+**** 11/15/24 19:52:48 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ c:\cds_spb_home\cdssetup\project4\project4-pspicefiles\schematic1\sim.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)   12.0000  (N00167)    9.0404 (N00415)    9.1069 (N01016)   10.4200     
+
+(N01127)   11.0000 (N01750)    5.5973 (N01754)    4.5333 (N01771)    4.5000     
+
+(N01815)    4.5000 (N03553)   12.0000 (N08043)   11.0000 (N09487)   11.9970     
+
+(N26891)    5.0200 (N27016)    5.0200 (N32736)    9.1073 (X_U6.8)    9.1073     
+
+(X_U6.15)    9.1167                   (X_U6.18)    8.3287                       
+
+(X_U6.20)    1.7934                   (X_U6.22)     .9741                       
+
+(X_U6.43)    9.0980                   (X_U6.46)    9.8860                       
+
+(X_U6.69)    9.1073                   (X_U6.71)    9.1073                       
+
+(X_U6.74)     .1980                   (X_U6.76)     .1980                       
+
+(X_U6.79)    9.4883                   (X_U6.82)    9.1071                       
+
+(X_U6.83)   10.7970                   (X_U6.86)   10.7970                       
+
+(X_U6.N1)    0.0000                   (X_U6.N4)    9.1069                       
+
+(X_U3.MID)    5.9997                  (X_U3.V11)    5.9997                      
+
+(X_U3.V12)    5.9997                  (X_U5.MID)    5.9997                      
+
+(X_U5.V11)    5.9997                  (X_U5.V12)    5.9997                      
+
+(X_U6.058)    -.0012                  (X_U6.065)-2.196E-09                      
+
+(X_U6.070)-219.4E-06                  (X_U6.077)    9.1073                      
+
+(X_U6.090)   10.8000                  (X_U6.092)   10.8000                      
+
+(X_U6.HIZ)    9.1073                  (X_U3.ESDN)    4.5000                     
+
+(X_U3.ESDP)    4.5000                 (X_U3.VCLP)   10.8620                     
+
+(X_U5.ESDN)   11.0000                 (X_U5.ESDP)   11.0000                     
+
+(X_U5.VCLP)   10.6770                 (X_U6.0121)    0.0000                     
+
+(X_U6.0125)-2.200E-09                 (X_U6.0129)    9.4882                     
+
+(X_U6.0139)    9.1073                 (X_U6.0141)    -.0012                     
+
+(X_U6.0143)    9.1073                 (X_U6.0173)    2.4960                     
+
+(X_U6.0180)    -.0012                 (X_U6.0187)    9.4483                     
+
+(X_U6.VREF)   10.0000                 (X_U3.CLAMP)   10.8640                    
+
+(X_U3.VCC_B)   12.0000                (X_U3.VEE_B) 6.000E-06                    
+
+(X_U3.VIMON)   55.9980                (X_U5.CLAMP)   10.6780                    
+
+(X_U5.VCC_B)   12.0000                (X_U5.VEE_B) 6.000E-06                    
+
+(X_U5.VIMON)    5.9994                (X_U3.VOUT_S)    5.5973                   
+
+(X_U3.VSENSE)   10.8640               (X_U3.X_U1.3)    0.0000                   
+
+(X_U3.X_U1.4)    0.0000               (X_U3.X_U1.5)    0.0000                   
+
+(X_U3.X_U1.6)    0.0000               (X_U3.X_U1.7)     .8338                   
+
+(X_U3.X_U1.8)     .8338               (X_U5.VOUT_S)   10.4200                   
+
+(X_U5.VSENSE)   10.6780               (X_U5.X_U1.3)    0.0000                   
+
+(X_U5.X_U1.4)    0.0000               (X_U5.X_U1.5)    0.0000                   
+
+(X_U5.X_U1.6)    0.0000               (X_U5.X_U1.7)     .8338                   
+
+(X_U5.X_U1.8)     .8338               (X_U3.VCC_CLP)   10.4540                  
+
+(X_U3.VEE_CLP)     .2000              (X_U3.X_U36.3)    0.0000                  
+
+(X_U3.X_U36.5)    0.0000              (X_U3.X_U37.3)    0.0000                  
+
+(X_U3.X_U37.5)    0.0000              (X_U3.X_U38.1)    4.5000                  
+
+(X_U5.VCC_CLP)   11.8000              (X_U5.VEE_CLP)     .2000                  
+
+(X_U5.X_U36.3)    0.0000              (X_U5.X_U36.5)    0.0000                  
+
+(X_U5.X_U37.3)    0.0000              (X_U5.X_U37.5)    0.0000                  
+
+(X_U5.X_U38.1)   11.0000              (X_U3.CL_CLAMP)   10.8620                 
+
+(X_U3.N5214286)    4.5000             (X_U3.N5220542)    5.9997                 
+
+(X_U3.N5220544)    4.5000             (X_U3.N5220550)    4.5000                 
+
+(X_U3.N5220566)    5.9997             (X_U3.N5220568)    5.9997                 
+
+(X_U3.N5220570)    4.5000             (X_U3.N5220574)    4.5000                 
+
+(X_U3.N5220596)    4.5000             (X_U3.N5220600)   12.1000                 
+
+(X_U3.N5220612)    -.1000             (X_U3.N5220620)    4.5000                 
+
+(X_U3.N5220634)    4.5000             (X_U3.N5220644)    5.9997                 
+
+(X_U3.N5220690)    5.9997             (X_U3.N5220702)    5.9997                 
+
+(X_U3.N5220724)    5.9997             (X_U3.N5220726)    5.9997                 
+
+(X_U3.N5220768)   98.0000             (X_U3.N5220770)    5.9997                 
+
+(X_U3.N5220772)    5.9997             (X_U3.N5220792)    5.9997                 
+
+(X_U3.N5220798)    5.9997             (X_U3.N5220810)  -96.4000                 
+
+(X_U3.N5220862)   66.0000             (X_U3.N5220866)    5.9997                 
+
+(X_U3.N5220868)    5.9997             (X_U3.N5220886)    5.9997                 
+
+(X_U3.N5220892)    5.9997             (X_U3.N5220904)  -54.0000                 
+
+(X_U3.N5220930)   10.8640             (X_U3.N5220958)   10.4540                 
+
+(X_U3.N5220962)     .2000             (X_U3.N5220990)     .2000                 
+
+(X_U3.N5220994)   10.4540             (X_U3.N5221054)    5.9997                 
+
+(X_U3.N5221060)    5.9997             (X_U3.N5221066)    5.9997                 
+
+(X_U3.N5221108)   55.9980             (X_U3.N5221120)    5.5973                 
+
+(X_U3.N5221190)    5.5973             (X_U3.N5221222)    8.3623                 
+
+(X_U3.N5221242)   12.9620             (X_U3.N5221250)    8.3623                 
+
+(X_U3.N5221254)    8.3623             (X_U3.N5221278)   12.9620                 
+
+(X_U3.N5221286)   12.9620             (X_U3.N5221330)    5.9997                 
+
+(X_U3.N5221352)   12.0000             (X_U3.N5221368) 6.006E-06                 
+
+(X_U3.N5221462)   10.8620             (X_U3.N5221526)   10.8620                 
+
+(X_U3.N5221534) 1001.0000             (X_U3.N5221538)    9.5688                 
+
+(X_U3.N5221574) 1001.5000             (X_U3.N5221656)   15.9560                 
+
+(X_U3.N5221668)   10.8640             (X_U3.N5221670)   10.8640                 
+
+(X_U3.N5221694) 1001.8000             (X_U3.N5221696) 1001.8000                 
+
+(X_U3.N5221736)    3.7678             (X_U3.N5221778)   10.8640                 
+
+(X_U3.N5221808) 1001.8000             (X_U3.N5221816) 1001.8000                 
+
+(X_U3.N5221836) 1001.7000             (X_U3.N5221878)    4.5000                 
+
+(X_U3.N5231966)    6.0000             (X_U3.N5231976)    5.9997                 
+
+(X_U3.N5231986)    6.0123             (X_U3.N5259537)   10.8640                 
+
+(X_U3.N5263447)   12.3770             (X_U3.N5290336)    5.9724                 
+
+(X_U3.N5290346)    5.9997             (X_U3.N5290356)    5.9997                 
+
+(X_U5.CL_CLAMP)   10.6770             (X_U5.N5214286)   11.0000                 
+
+(X_U5.N5220542)    5.9997             (X_U5.N5220544)   11.0000                 
+
+(X_U5.N5220550)   11.0000             (X_U5.N5220566)    5.9997                 
+
+(X_U5.N5220568)    5.9997             (X_U5.N5220570)   11.0000                 
+
+(X_U5.N5220574)   11.0000             (X_U5.N5220596)   11.0000                 
+
+(X_U5.N5220600)   12.1000             (X_U5.N5220612)    -.1000                 
+
+(X_U5.N5220620)   11.0000             (X_U5.N5220634)   11.0000                 
+
+(X_U5.N5220644)    5.9997             (X_U5.N5220690)    5.9997                 
+
+(X_U5.N5220702)    5.9997             (X_U5.N5220724)    5.9997                 
+
+(X_U5.N5220726)    5.9997             (X_U5.N5220768)   98.0000                 
+
+(X_U5.N5220770)    5.9997             (X_U5.N5220772)    5.9997                 
+
+(X_U5.N5220792)    5.9997             (X_U5.N5220798)    5.9997                 
+
+(X_U5.N5220810)  -96.4000             (X_U5.N5220862)   66.0000                 
+
+(X_U5.N5220866)    5.9997             (X_U5.N5220868)    5.9997                 
+
+(X_U5.N5220886)    5.9997             (X_U5.N5220892)    5.9997                 
+
+(X_U5.N5220904)  -54.0000             (X_U5.N5220930)   10.6780                 
+
+(X_U5.N5220958)   11.8000             (X_U5.N5220962)     .2000                 
+
+(X_U5.N5220990)     .2000             (X_U5.N5220994)   11.8000                 
+
+(X_U5.N5221054)    5.9997             (X_U5.N5221060)    5.9997                 
+
+(X_U5.N5221066)    5.9997             (X_U5.N5221108)    5.9994                 
+
+(X_U5.N5221120)   10.4200             (X_U5.N5221190)   10.4200                 
+
+(X_U5.N5221222)    8.1766             (X_U5.N5221242)   12.7770                 
+
+(X_U5.N5221250)    8.1766             (X_U5.N5221254)    8.1766                 
+
+(X_U5.N5221278)   12.7770             (X_U5.N5221286)   12.7770                 
+
+(X_U5.N5221330)    5.9997             (X_U5.N5221352)   12.0000                 
+
+(X_U5.N5221368) 6.006E-06             (X_U5.N5221462)   10.6770                 
+
+(X_U5.N5221526)   10.6770             (X_U5.N5221534)   54.5870                 
+
+(X_U5.N5221538)    6.1740             (X_U5.N5221574)   54.6130                 
+
+(X_U5.N5221656)    6.4858             (X_U5.N5221668)   10.6780                 
+
+(X_U5.N5221670)   10.6780             (X_U5.N5221694)   54.6250                 
+
+(X_U5.N5221696)   54.6250             (X_U5.N5221736)    3.7678                 
+
+(X_U5.N5221778)   10.6780             (X_U5.N5221808)   54.6250                 
+
+(X_U5.N5221816)   54.6250             (X_U5.N5221836)   54.6200                 
+
+(X_U5.N5221878)   11.0000             (X_U5.N5231966)    6.0000                 
+
+(X_U5.N5231976)    5.9997             (X_U5.N5231986)    6.0123                 
+
+(X_U5.N5259537)   10.6780             (X_U5.N5263447)   12.1330                 
+
+(X_U5.N5290336)    6.0906             (X_U5.N5290346)    5.9997                 
+
+(X_U5.N5290356)    5.9997             (X_U3.N53210501) 1001.8000                
+
+(X_U3.N53216461)   10.8640            (X_U3.N53229461) 1001.8000                
+
+(X_U5.N53210501)   54.6250            (X_U5.N53216461)   10.6780                
+
+(X_U5.N53229461)   54.6250            (X_U3.CLAW_CLAMP)   10.8620               
+
+(X_U5.CLAW_CLAMP)   10.6770           (X_U3.SW_OL_OPA2156)    5.9997            
+
+(X_U5.SW_OL_OPA2156)    5.9997        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.980E-02
+    V_V2        -3.815E-11
+    V_V3         5.665E-12
+    V_V4        -8.867E-09
+    V_V5        -9.090E-09
+    X_U3.V_VCM_MAX  -6.101E-12
+    X_U3.V_VCM_MIN   6.100E-12
+    X_U3.V_V_GRN   6.000E-11
+    X_U3.V_V_GRP  -6.000E-11
+    X_U3.V_V_ISCN   1.024E-10
+    X_U3.V_V_ISCP  -9.200E-11
+    X_U3.V_V_ORN   0.000E+00
+    X_U3.V_V_ORP   0.000E+00
+    X_U5.V_VCM_MAX  -6.101E-12
+    X_U5.V_VCM_MIN   6.100E-12
+    X_U5.V_V_GRN   6.000E-11
+    X_U5.V_V_GRP  -6.000E-11
+    X_U5.V_V_ISCN   1.024E-10
+    X_U5.V_V_ISCP  -9.200E-11
+    X_U5.V_V_ORN   0.000E+00
+    X_U5.V_V_ORP   0.000E+00
+    X_U6.Voff    1.771E-11
+    X_U6.VCCVS1_in   0.000E+00
+    X_U6.V1     -7.921E-05
+    X_U6.VCONT   1.000E-03
+    X_U3.X_H1.VH_H1   5.000E-02
+    X_U3.X_H2.VH_H2  -2.102E-09
+    X_U3.X_H3.VH_H3   2.507E-09
+    X_U5.X_H1.VH_H1  -2.494E-07
+    X_U5.X_H2.VH_H2  -2.103E-09
+    X_U5.X_H3.VH_H3   2.507E-09
+
+    TOTAL POWER DISSIPATION   1.08E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/15/24 19:52:48 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim"  [ c:\cds_spb_home\cdssetup\project4\project4-pspicefiles\schematic1\sim.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       25.55
+

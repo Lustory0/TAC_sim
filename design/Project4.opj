@@ -1,0 +1,176 @@
+(ExpressProject "Project4"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "23.1-2024 S001-[11/15/24]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\project4.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Display_Online_DRC_Results "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\project4-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\project4-pspicefiles\schematic1\sim.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project4-pspicefiles\schematic1\sim_psp.sim"
+        (DisplayName "SCHEMATIC1-sim_psp")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project4-pspicefiles\schematic1\sim.sim"
+        (DisplayName "SCHEMATIC1-sim")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (OPA659
+      (FullPartName "OPA659.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\OPA659.OLB")
+      (DeviceIndex "0"))
+    (OPA846
+      (FullPartName "OPA846.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\OPA846.OLB")
+      (DeviceIndex "0"))
+    (OPA830
+      (FullPartName "OPA830.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\OPA830.OLB")
+      (DeviceIndex "0"))
+    (OPA820
+      (FullPartName "OPA820.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\OPA820.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (BZX84C9V1/PLP
+      (FullPartName "BZX84C9V1/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BZX84C8V2/PLP
+      (FullPartName "BZX84C8V2/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BAT54/PLP
+      (FullPartName "BAT54/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (10MQ060N
+      (FullPartName "10MQ060N.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BZX79C6V8/PLP
+      (FullPartName "BZX79C6V8/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BAV19
+      (FullPartName "BAV19.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (BZX84C7V5/PLP
+      (FullPartName "BZX84C7V5/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BAV100
+      (FullPartName "BAV100.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BZX84C6V2/PLP
+      (FullPartName "BZX84C6V2/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BZX84C5V6/PLP
+      (FullPartName "BZX84C5V6/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BZX84C4V3/ZTX
+      (FullPartName "BZX84C4V3/ZTX.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BFT93/INF
+      (FullPartName "BFT93/INF.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (BFG67/PLP
+      (FullPartName "BFG67/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (TL081
+      (FullPartName "TL081.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\TL081.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OP07C
+      (FullPartName "OP07C.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\OP07C.OLB")
+      (DeviceIndex "0"))
+    (1n5231/ON
+      (FullPartName "1n5231/ON.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0"))
+    (BFG135/PLP
+      (FullPartName "BFG135/PLP.Normal")
+      (LibraryName
+         "F:\PSPICE\TOOLS\CAPTURE\LIBRARY\PSPICE\CDN_PSP_TIPSPICE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\cds_spb_home\cdssetup\pspTILibDir")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 523"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 28 5 1290 28 545")
+        (Scroll "0 466")
+        (Zoom "132")
+        (Occurrence "/"))
+      (Path "C:\CDS_SPB_HOME\CDSSETUP\PROJECT4\PROJECT4.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "li150"))
